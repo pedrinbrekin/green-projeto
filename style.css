@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/bg.jpg);
+    background-size: cover;
+}
+
+.banner .content img{
+    margin-top: -250px;
+    max-width: 1000px;
+    text-align: center;
+
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo span{
+    color: #327A25;
+
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a{
+    color: #111;
+}
+
+header .navigation li a:hover{
+    color: #327A25;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .co150{
+    position: relative;
+    width: 48%;
+}
+
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span{
+    color: #327A25;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.co150 p span{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 20px;
+
+}
+.row .co150 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .co150 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produtos .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.produtos .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.produtos .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.produtos .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.produtos .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.produtos .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.produtos .content .box .text p{
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.resultados{
+    background: url(img/bg2.jpg);
+    background-size: cover;
+}
+
+.white .titleText,
+.white p{
+    color: #fff;
+}
+
+.resultados .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.resultados .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resultados .content .box .imgBx{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.resultados .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.resultados .content .box .text{
+    text-align: center;
+}
+
+.resultados .content .box .text p{
+    color: #666;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.resultados .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #327A25;
+    font-weight: 600;
+}
+
+.contato{
+    background: url(img/bg3.jpg);
+    background-size: cover;
+}
+
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactForm .titleText h2{
+    color: #fff;
+}
+
+.contactForm h3{
+    color: #111;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    font-weight: 500;
+}
+
+.contactForm p{
+    color: #111;
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 10px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactForm .inputBox button[type="submit"]{
+    background-color:#327A25;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.copyrightText{
+    padding: 8px 40px;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.copyrightText p{
+    color: #333;
+}
+
+.copyrightText a{
+    color: #327A25;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+
+    header .navigation{
+        display: none;
+    }
+
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navigation li{
+        margin-left: 0;
+    }
+
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active{
+        background: url(img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .banner .content img{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .co150{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .co150 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .menu .content{
+        margin-top: 20px;
+    }
+
+    .menu .content .box{
+        margin: 10px;
+    }
+
+    .menu .content .box .imgBx{
+        height: 260px;
+    }
+
+    .titleText{
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        line-height: 15px;
+        font-weight: 300;
+    }
+
+    .resultados .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contactForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
